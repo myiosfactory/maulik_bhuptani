@@ -22,12 +22,12 @@ const illustration = {
 const greeting = {
   username: "Maulik Bhuptani",
   title: "Hi, I'm Maulik",
-  subHeader: "I’m a Top Rated Plus (Top 3%) Mobile App Developer with 100% Job Success Score and 78% long-term clients on Upwork.",
+  subHeader:
+    "I’m a Top Rated Plus (Top 3%) Mobile App Developer with 100% Job Success Score and 78% long-term clients on Upwork.",
   subTitle: emoji(
     "A passionate Mobile App Developer With 10+ years of hands-on experience building high-quality mobile apps, I bring a wealth of expertise in creating reliable, scalable, and beautiful mobile applications. I specialize in iOS, Android, Flutter, and React Native development helping startups and businesses turn their ideas into powerful, production-ready apps."
   ),
-  resumeLink:
-    "", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,18 +49,21 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY MOBILE APP DEVELOPER DELIVERING HANDS-ON EXPERTISE ACROSS MULTIPLE TECH STACKS",
+  subTitle:
+    "CRAZY MOBILE APP DEVELOPER DELIVERING HANDS-ON EXPERTISE ACROSS MULTIPLE TECH STACKS",
   skills: [
     emoji(
       "⚡ Develop highly interactive Mobile Apps / User Interfaces for your mobile applications"
     ),
-    emoji("⚡ From native iOS to cloud integrations with Firebase and AWS—I enjoy the full stack"),
+    emoji(
+      "⚡ From native iOS to cloud integrations with Firebase and AWS—I enjoy the full stack"
+    ),
     emoji(
       "⚡ Integration of third party services such as Firebase / Supabase / AWS & SDK integrations"
     ),
     emoji(
       "⚡ I don't just write code. I craft experiences that feel native, perform smoothly, and solve real problems."
-    ),
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -120,9 +123,7 @@ https://fontawesome.com/icons?d=gallery */
 
 const educationInfo = {
   display: false, // Set false to hide this section, defaults to true
-  schools: [
-
-  ]
+  schools: []
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -163,7 +164,7 @@ const workExperiences = {
       desc: "Founded Syncly with a vision to build meaningful, high-quality mobile products, not just applications.",
       descBullets: [
         "Worked with global clients across the US, UK, and African markets to design, develop, and maintain high-quality mobile applications.",
-        "Translated client requirements into clean, scalable, and maintainable Swift code.",
+        "Translated client requirements into clean, scalable, and maintainable Swift code."
       ]
     },
     {
@@ -185,7 +186,7 @@ const workExperiences = {
       desc: "Built a solid foundation in software architecture, team collaboration, and performance optimization.",
       descBullets: [
         "Spent 8 years working with three different organizations as a mobile app developer.",
-        "Gained hands-on experience in Objective-C, Swift, Java, and cross-platform tools, developing and maintaining a range of enterprise and consumer apps.",
+        "Gained hands-on experience in Objective-C, Swift, Java, and cross-platform tools, developing and maintaining a range of enterprise and consumer apps."
       ]
     }
   ]
@@ -208,7 +209,8 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/LuluMoney.jpeg"),
       projectName: "Lulu Money - Money Transfer App",
-      projectDesc: "Lulu Money is a global payment app designed for fast, secure, and reliable international money transfers. It allows users to send money worldwide with real-time tracking and transparent exchange rates. Multiple payment options and easy recipient management make transfers simple and flexible.",
+      projectDesc:
+        "Lulu Money is a global payment app designed for fast, secure, and reliable international money transfers. It allows users to send money worldwide with real-time tracking and transparent exchange rates. Multiple payment options and easy recipient management make transfers simple and flexible.",
       footerLink: [
         {
           name: "App Store",
@@ -219,7 +221,8 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/DragonAI.png"),
       projectName: "DragonAI: AI Image & Video",
-      projectDesc: "Built an all-in-one AI platform combining chat, image generation, and video creation. Delivers high-quality AI outputs with a unified experience, advanced tools, and a creator-focused ecosystem.",
+      projectDesc:
+        "Built an all-in-one AI platform combining chat, image generation, and video creation. Delivers high-quality AI outputs with a unified experience, advanced tools, and a creator-focused ecosystem.",
       video: require("./assets/videos/DragonAI.mp4"),
       footerLink: [
         {
@@ -232,7 +235,8 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/Notezy.jpeg"),
       projectName: "Notezy: AI Meeting Note Taker",
-      projectDesc: "Developed a meeting assistant leveraging AI for real-time transcription and automated summarization. Features multi-language support, audio ingestion, and notebook-style organization for efficient workflows.",
+      projectDesc:
+        "Developed a meeting assistant leveraging AI for real-time transcription and automated summarization. Features multi-language support, audio ingestion, and notebook-style organization for efficient workflows.",
       footerLink: [
         {
           name: "App Store",
@@ -243,7 +247,8 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/FluidFocus.png"),
       projectName: "Fluid Focus",
-      projectDesc: "Built a productivity app to help users reduce screen time and stay focused. Includes focus sessions, app blocking, and usage tracking. Encourages healthier digital habits through simple rewards.",
+      projectDesc:
+        "Built a productivity app to help users reduce screen time and stay focused. Includes focus sessions, app blocking, and usage tracking. Encourages healthier digital habits through simple rewards.",
       footerLink: [
         {
           name: "App Store",
@@ -254,7 +259,8 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/GolfAI.jpeg"),
       projectName: "Golf AI",
-      projectDesc: "Developed a camera-based golf swing analysis system leveraging AI and motion analysis. Provides instant feedback, customized action plans, and performance tracking—no external sensors required.",
+      projectDesc:
+        "Developed a camera-based golf swing analysis system leveraging AI and motion analysis. Provides instant feedback, customized action plans, and performance tracking—no external sensors required.",
       video: require("./assets/videos/GolfAI.mp4"),
       footerLink: [
         {
@@ -266,7 +272,8 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/DamageID.png"),
       projectName: "Damage iD",
-      projectDesc: "Damage iD enables vehicle-sharing businesses to capture before-and-after photo and video proof of vehicle condition and fuel levels. It prevents disputes, protects drivers and agents and boosting trust and profitability.",
+      projectDesc:
+        "Damage iD enables vehicle-sharing businesses to capture before-and-after photo and video proof of vehicle condition and fuel levels. It prevents disputes, protects drivers and agents and boosting trust and profitability.",
       footerLink: [
         {
           name: "App Store",
@@ -277,7 +284,8 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/BedTime.png"),
       projectName: "DreamTime Stories & Sounds",
-      projectDesc: "An App for child for peaceful sleep. It helps children fall asleep faster and enjoy a night of restful sleep, DreamTime offers calming sleep stories, adventurous tales, and soothing meditation sounds.",
+      projectDesc:
+        "An App for child for peaceful sleep. It helps children fall asleep faster and enjoy a night of restful sleep, DreamTime offers calming sleep stories, adventurous tales, and soothing meditation sounds.",
       footerLink: [
         {
           name: "App Store",
@@ -288,12 +296,14 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/Agent37.png"),
       projectName: "Agent37",
-      projectDesc: "Agent37 is an all-in-one client management app designed for real estate professionals. It simplifies buyers, sellers, teams, tasks, documents, and transactions through a fast, intuitive mobile experience.",
+      projectDesc:
+        "Agent37 is an all-in-one client management app designed for real estate professionals. It simplifies buyers, sellers, teams, tasks, documents, and transactions through a fast, intuitive mobile experience."
     },
     {
       image: require("./assets/images/work_projects/Junote.png"),
       projectName: "Junote Workout Tracker",
-      projectDesc: "Junote Gym Log combines strength training and running into a single, balanced fitness experience. It offers customizable workouts, flexible plans, and routines for every fitness level. With built-in progress tracking, it helps users stay consistent and achieve their goals efficiently.",
+      projectDesc:
+        "Junote Gym Log combines strength training and running into a single, balanced fitness experience. It offers customizable workouts, flexible plans, and routines for every fitness level. With built-in progress tracking, it helps users stay consistent and achieve their goals efficiently.",
       footerLink: [
         {
           name: "App Store",
@@ -304,7 +314,8 @@ const bigProjects = {
     {
       image: require("./assets/images/work_projects/Lebenskompass.png"),
       projectName: "Lebenskompass",
-      projectDesc: "Lebenskompass Quotes is a daily inspiration app offering motivational quotes, affirmations, and positive thoughts. It helps users stay mindful and focused with reminders, widgets, and personalized content. Designed to fit everyday life, it delivers the right words at the right moment to inspire clarity and positivity.",
+      projectDesc:
+        "Lebenskompass Quotes is a daily inspiration app offering motivational quotes, affirmations, and positive thoughts. It helps users stay mindful and focused with reminders, widgets, and personalized content. Designed to fit everyday life, it delivers the right words at the right moment to inspire clarity and positivity.",
       video: require("./assets/videos/Lebenskompass.mp4"),
       footerLink: [
         {
@@ -328,7 +339,8 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "iOS Development Masterclass",
-      subtitle: "Completed iOS masterclass using SwiftUI, SwiftData, and Apple AI, with a strong focus on clean architecture.",
+      subtitle:
+        "Completed iOS masterclass using SwiftUI, SwiftData, and Apple AI, with a strong focus on clean architecture.",
       image: require("./assets/images/udemy_ios_masterclass.jpg"),
       imageAlt: "PWA Logo",
       footerLink: [
@@ -353,7 +365,8 @@ const achievementSection = {
     },
     {
       title: " The Complete React Native + Hooks Course",
-      subtitle: "Hands-on experience with React Native core concepts, Hooks, navigation, and performance optimization.",
+      subtitle:
+        "Hands-on experience with React Native core concepts, Hooks, navigation, and performance optimization.",
       image: require("./assets/images/udemy_reactnative.jpg"),
       imageAlt: "PWA Logo",
       footerLink: [
@@ -378,7 +391,8 @@ const achievementSection = {
     },
     {
       title: "Master In Claude AI – Top 1 AI Tool",
-      subtitle: "Mastering Claude AI in Most Benchmarks for Real-World Business, Problem-Solving, and Coding",
+      subtitle:
+        "Mastering Claude AI in Most Benchmarks for Real-World Business, Problem-Solving, and Coding",
       image: require("./assets/images/udemy_claude.jpg"),
       imageAlt: "PWA Logo",
       footerLink: [
@@ -399,9 +413,7 @@ const blogSection = {
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-
-  ],
+  blogs: [],
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -431,9 +443,7 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-
-  ],
+  podcast: [],
   display: false // Set false to hide this section, defaults to true
 };
 

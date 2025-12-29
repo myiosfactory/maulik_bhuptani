@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./CursorTracker.scss";
 
 function CursorTracker() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({x: 0, y: 0});
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      setMousePosition({ x: event.clientX, y: event.clientY });
+    const handleMouseMove = event => {
+      setMousePosition({x: event.clientX, y: event.clientY});
       setIsVisible(true);
     };
 
@@ -29,7 +29,7 @@ function CursorTracker() {
       className={`cursor-tracker ${isVisible ? "visible" : ""}`}
       style={{
         left: `${mousePosition.x}px`,
-        top: `${mousePosition.y}px`,
+        top: `${mousePosition.y}px`
       }}
     >
       <div className="cursor-dot"></div>

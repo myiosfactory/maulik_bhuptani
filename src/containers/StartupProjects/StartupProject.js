@@ -1,14 +1,14 @@
-import React, { useContext, useState, useRef, useEffect } from "react";
+import React, {useContext, useState, useRef, useEffect} from "react";
 import "./StartupProjects.scss";
-import { bigProjects } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {bigProjects} from "../../portfolio";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
   const [fullscreenImage, setFullscreenImage] = useState(null);
   const [fullscreenVideo, setFullscreenVideo] = useState(null);
   const videoRef = useRef(null);
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   useEffect(() => {
     if (!fullscreenVideo && videoRef.current) {
@@ -44,7 +44,7 @@ export default function StartupProject() {
             controls
             autoPlay
             ref={videoRef}
-            onClick={(e) => e.stopPropagation()}
+            onClick={e => e.stopPropagation()}
           />
           <span className="video-controls-hint">Click outside to close</span>
         </div>
@@ -141,18 +141,14 @@ export default function StartupProject() {
 
                   <div className="project-detail">
                     <h5
-                      className={
-                        isDark ? "dark-mode card-title" : "card-title"
-                      }
+                      className={isDark ? "dark-mode card-title" : "card-title"}
                     >
                       {project.projectName}
                     </h5>
 
                     <p
                       className={
-                        isDark
-                          ? "dark-mode card-subtitle"
-                          : "card-subtitle"
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
                       }
                     >
                       {project.projectDesc}
@@ -167,12 +163,10 @@ export default function StartupProject() {
                               link.name === "App Store"
                                 ? "appstore-tag"
                                 : isDark
-                                  ? "dark-mode project-tag"
-                                  : "project-tag"
+                                ? "dark-mode project-tag"
+                                : "project-tag"
                             }
-                            onClick={() =>
-                              openUrlInNewTab(link.url)
-                            }
+                            onClick={() => openUrlInNewTab(link.url)}
                           >
                             {link.name === "App Store" && (
                               <i className="fab fa-apple appstore-icon"></i>
