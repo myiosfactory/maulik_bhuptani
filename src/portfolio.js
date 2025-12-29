@@ -203,7 +203,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Portfolio Projects",
   subtitle: "High-impact products crafted for startups and growing companies",
   projects: [
     {

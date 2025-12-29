@@ -18,7 +18,7 @@ Hi! I'm **Maulik Bhuptani**, a passionate Full Stack Software Developer 🚀. I 
 - Summary and About Me  
 - Skills & Tech Stack  
 - Education & Work Experience  
-- Big Projects  
+- Portfolio Projects  
 - Achievements & Certifications 🏆  
 - Contact Me  
 - GitHub Profile
