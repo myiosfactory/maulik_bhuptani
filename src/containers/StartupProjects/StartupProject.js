@@ -164,6 +164,8 @@ export default function StartupProject() {
               className="fullscreen-video"
               src={fullscreenVideo}
               controls
+              muted
+              autoPlay
               playsInline
               webkit-playsinline="true"
               preload="auto"
