@@ -59,25 +59,27 @@
 
 .play-button {
   pointer-events: auto;
-  background: rgba(255, 255, 255, 0.12);
+  background: #000;
+  /* black background */
   width: 60px;
   height: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(4px);
   transition: transform 0.15s ease, background 0.15s ease;
 }
 
 .play-button i {
-  color: #000000;
+  color: #ffffff;
+  /* white play icon */
   font-size: 20px;
   margin-left: 3px;
+  /* keeps triangle visually centered */
 }
 
 .video-thumb:hover .play-button {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .fullscreen-video {

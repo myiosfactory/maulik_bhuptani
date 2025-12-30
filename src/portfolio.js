@@ -341,7 +341,7 @@ const achievementSection = {
       title: "iOS Development Masterclass",
       subtitle:
         "Completed iOS masterclass using SwiftUI, SwiftData, and Apple AI, with a strong focus on clean architecture.",
-      image: require("./assets/images/udemy_ios_masterclass.jpg"),
+      image: require("./assets/images/udemy_ios_masterclass.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
         {
@@ -354,7 +354,7 @@ const achievementSection = {
       title: "Flutter & Dart - The Complete Guide",
       subtitle:
         "Flutter SDK & Flutter Framework for building native iOS and Android apps.",
-      image: require("./assets/images/udemy_flutter.jpg"),
+      image: require("./assets/images/udemy_flutter.jpeg"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
@@ -367,7 +367,7 @@ const achievementSection = {
       title: " The Complete React Native + Hooks Course",
       subtitle:
         "Hands-on experience with React Native core concepts, Hooks, navigation, and performance optimization.",
-      image: require("./assets/images/udemy_reactnative.jpg"),
+      image: require("./assets/images/udemy_reactnative.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
         {
@@ -393,7 +393,7 @@ const achievementSection = {
       title: "Master In Claude AI – Top 1 AI Tool",
       subtitle:
         "Mastering Claude AI in Most Benchmarks for Real-World Business, Problem-Solving, and Coding",
-      image: require("./assets/images/udemy_claude.jpg"),
+      image: require("./assets/images/udemy_claude.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
         {
