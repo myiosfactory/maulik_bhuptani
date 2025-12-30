@@ -1,13 +1,27 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./CursorTracker.scss";
 
 function CursorTracker() {
-  const [mousePosition, setMousePosition] = useState({x: 0, y: 0});
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    // Check if device supports touch
+    const checkTouchDevice = () => {
+      return (
+        (typeof window !== "undefined" &&
+          ("ontouchstart" in window ||
+            navigator.maxTouchPoints > 0 ||
+            navigator.msMaxTouchPoints > 0)) ||
+        false
+      );
+    };
+
+    setIsTouchDevice(checkTouchDevice());
+
     const handleMouseMove = event => {
-      setMousePosition({x: event.clientX, y: event.clientY});
+      setMousePosition({ x: event.clientX, y: event.clientY });
       setIsVisible(true);
     };
 
@@ -15,14 +29,29 @@ function CursorTracker() {
       setIsVisible(false);
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseleave", handleMouseLeave);
+    const handleTouchStart = () => {
+      setIsVisible(false);
+    };
+
+    if (!checkTouchDevice()) {
+      window.addEventListener("mousemove", handleMouseMove);
+      document.addEventListener("mouseleave", handleMouseLeave);
+    }
+
+    // Hide cursor tracker on touch
+    document.addEventListener("touchstart", handleTouchStart);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("touchstart", handleTouchStart);
     };
   }, []);
+
+  // Don't render cursor tracker on touch devices
+  if (isTouchDevice) {
+    return null;
+  }
 
   return (
     <div
