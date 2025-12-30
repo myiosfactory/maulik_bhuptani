@@ -22,7 +22,7 @@
 }
 
 .skill {
-  line-height: 3.5vw;
+  line-height: 1.6;
 }
 
 .skill-bars {
@@ -97,5 +97,10 @@
     height: 200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .skill p {
+    margin-bottom: 8px;
+    line-height: 1.7;
   }
 }
