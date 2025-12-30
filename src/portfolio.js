@@ -228,7 +228,7 @@ const bigProjects = {
       projectName: "DragonAI: AI Image & Video",
       projectDesc:
         "Built an all-in-one AI platform combining chat, image generation, and video creation. Delivers high-quality AI outputs with a unified experience, advanced tools, and a creator-focused ecosystem.",
-      video: "https://res.cloudinary.com/dydarhe1i/video/upload/v1767100056/DragonAI_rloc7c.mp4",
+      video: "https://res.cloudinary.com/dpsecouq6/video/upload/v1767101128/DragonAI_ig0toc.mp4",
       footerLink: [
         {
           name: "App Store",
@@ -266,7 +266,7 @@ const bigProjects = {
       projectName: "Golf AI",
       projectDesc:
         "Developed a camera-based golf swing analysis system leveraging AI and motion analysis. Provides instant feedback, customized action plans, and performance tracking—no external sensors required.",
-      video: "https://res.cloudinary.com/dydarhe1i/video/upload/v1767100045/GolfAI_eq6vhl.mp4",
+      video: "https://res.cloudinary.com/dpsecouq6/video/upload/v1767101131/GolfAI_yjp4en.mp4",
       footerLink: [
         {
           name: "App Store",
@@ -321,7 +321,7 @@ const bigProjects = {
       projectName: "Lebenskompass",
       projectDesc:
         "Lebenskompass Quotes is a daily inspiration app offering motivational quotes, affirmations, and positive thoughts. It helps users stay mindful and focused with reminders, widgets, and personalized content. Designed to fit everyday life, it delivers the right words at the right moment to inspire clarity and positivity.",
-      video: "https://res.cloudinary.com/dydarhe1i/video/upload/v1767100056/Lebenskompass_vfpwov.mp4",
+      video: "https://res.cloudinary.com/dpsecouq6/video/upload/v1767101127/Lebenskompass_tp87dx.mp4",
       footerLink: [
         {
           name: "App Store",
