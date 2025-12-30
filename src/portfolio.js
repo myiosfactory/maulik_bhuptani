@@ -266,7 +266,7 @@ const bigProjects = {
       projectName: "Golf AI",
       projectDesc:
         "Developed a camera-based golf swing analysis system leveraging AI and motion analysis. Provides instant feedback, customized action plans, and performance tracking—no external sensors required.",
-      video: require("./assets/videos/GolfAI.mp4"),
+      video: require("./assets/videos/GolfAI_fixed.mp4"),
       footerLink: [
         {
           name: "App Store",
