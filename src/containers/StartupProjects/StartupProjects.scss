@@ -22,13 +22,11 @@
 
 .project-image {
   position: relative;
-  height: 350px;
   width: 100%;
-  overflow: hidden;
-  /* keeps scaled image from overflowing */
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible;
 }
 
 .video-thumb {
@@ -63,7 +61,6 @@
 .play-button {
   pointer-events: auto;
   background: #000;
-  /* black background */
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -75,10 +72,8 @@
 
 .play-button i {
   color: #ffffff;
-  /* white play icon */
   font-size: 20px;
   margin-left: 3px;
-  /* keeps triangle visually centered */
 }
 
 .video-thumb:hover .play-button {
@@ -125,15 +120,11 @@
 
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .project-card-dark {
   box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.25s ease;
 }
 
@@ -171,13 +162,6 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
-}
-
-@media (max-width: 768px) {
-  .project-subtitle {
-    font-size: 16px;
-    text-align: center;
-  }
 }
 
 .appstore-tag {
@@ -247,6 +231,7 @@
   }
 }
 
+/* Desktop styles */
 @media (min-width: 769px) {
   .card-image {
     max-width: none;
@@ -261,6 +246,7 @@
   }
 }
 
+/* Tablet and mobile styles */
 @media (max-width: 768px) {
   .projects-container {
     grid-template-columns: 1fr;
@@ -283,9 +269,11 @@
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
+    object-fit: contain;
   }
 }
 
+/* Small mobile styles */
 @media (max-width: 480px) {
   .project-card {
     padding: 1rem;
@@ -302,8 +290,6 @@
 
   .project-image {
     min-height: 150px;
-    overflow: visible;
-    /* Keep visible here too */
   }
 
   .video-thumb {
