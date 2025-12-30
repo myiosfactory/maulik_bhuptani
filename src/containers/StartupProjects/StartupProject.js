@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef, useEffect } from "react";
+import React, { useContext, useState, useRef, useEffect, useCallback } from "react";
 import "./StartupProjects.scss";
 import { bigProjects } from "../../portfolio";
 import { Fade } from "react-reveal";
@@ -18,22 +18,45 @@ export default function StartupProject() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  // Handle video when fullscreen opens
+  useEffect(() => {
+    if (fullscreenVideo && videoRef.current) {
+      // Small delay to ensure DOM is ready
+      const timer = setTimeout(() => {
+        videoRef.current?.play().catch(err => {
+          console.log("Autoplay prevented:", err);
+        });
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [fullscreenVideo]);
+
   function openUrlInNewTab(url) {
     if (!url) return;
     const win = window.open(url, "_blank");
     win && win.focus();
   }
 
+  // Close video handler
+  const closeVideo = useCallback(() => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+    setFullscreenVideo(null);
+  }, []);
+
   // Handle overlay close - only close if clicking the overlay itself
-  const handleOverlayClick = (e, closeFunc) => {
+  const handleOverlayClick = useCallback((e, closeFunc) => {
     if (e.target === e.currentTarget) {
-      if (videoRef.current) {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
-      }
       closeFunc();
     }
-  };
+  }, []);
+
+  // Prevent click events inside video container from bubbling
+  const handleVideoContainerClick = useCallback((e) => {
+    e.stopPropagation();
+  }, []);
 
   if (!bigProjects.display) return null;
 
@@ -117,19 +140,28 @@ export default function StartupProject() {
       {fullscreenVideo && (
         <div
           className="fullscreen-overlay"
-          onClick={(e) => handleOverlayClick(e, () => setFullscreenVideo(null))}
+          onClick={(e) => handleOverlayClick(e, closeVideo)}
         >
-          <div className="video-container" onClick={(e) => e.stopPropagation()}>
+          <div className="video-container" onClick={handleVideoContainerClick}>
             <video
+              ref={videoRef}
               className="fullscreen-video"
               src={fullscreenVideo}
               controls
-              autoPlay
               playsInline
-              ref={videoRef}
+              webkit-playsinline="true"
+              preload="auto"
+              controlsList="nodownload"
             />
           </div>
-          <span className="video-controls-hint">Click outside to close</span>
+          <button
+            className="close-button"
+            onClick={closeVideo}
+            aria-label="Close video"
+          >
+            ✕
+          </button>
+          <span className="video-controls-hint">Tap outside or ✕ to close</span>
         </div>
       )}
 
