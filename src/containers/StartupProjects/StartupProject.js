@@ -205,11 +205,7 @@ export default function StartupProject() {
               controls
               playsInline
               preload="auto"
-              onPause={(e) => console.log("Paused - readyState:", e.target.readyState, "paused:", e.target.paused)}
-              onPlay={() => console.log("Playing")}
-              onWaiting={() => console.log("Waiting/Buffering")}
-              onError={(e) => console.log("Error:", e.target.error)}
-              onStalled={() => console.log("Stalled - network issue")}
+              autoPlay
             />
           </div>
           <button
