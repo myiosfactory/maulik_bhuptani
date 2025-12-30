@@ -11,49 +11,28 @@ export default function StartupProject() {
   const videoRef = useRef(null);
   const { isDark } = useContext(StyleContext);
 
+  // Check if mobile on load and resize
   useEffect(() => {
-    // Check if mobile
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  useEffect(() => {
-    if (!fullscreenVideo && videoRef.current) {
-      try {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
-      } catch (e) {
-        // ignore
-      }
-    }
-  }, [fullscreenVideo]);
-
+  // Open URL in new tab
   function openUrlInNewTab(url) {
     if (!url) return;
     const win = window.open(url, "_blank");
     win && win.focus();
   }
 
-  if (!bigProjects.display) {
-    return null;
-  }
+  if (!bigProjects.display) return null;
 
   const ProjectContent = () => (
     <div className="main" id="projects">
       <div>
         <h1 className="skills-heading">{bigProjects.title}</h1>
-
-        <p
-          className={
-            isDark
-              ? "dark-mode project-subtitle"
-              : "subTitle project-subtitle"
-          }
-        >
+        <p className={isDark ? "dark-mode project-subtitle" : "subTitle project-subtitle"}>
           {bigProjects.subtitle}
         </p>
 
@@ -75,12 +54,7 @@ export default function StartupProject() {
                     : setFullscreenImage(project.image)
                 }
               >
-                <img
-                  src={project.image}
-                  alt={project.projectName}
-                  className="card-image"
-                />
-
+                <img src={project.image} alt={project.projectName} className="card-image" />
                 {project.video && (
                   <div className="play-overlay">
                     <div className="play-button">
@@ -91,17 +65,10 @@ export default function StartupProject() {
               </div>
 
               <div className="project-detail">
-                <h5
-                  className={isDark ? "dark-mode card-title" : "card-title"}
-                >
+                <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
                   {project.projectName}
                 </h5>
-
-                <p
-                  className={
-                    isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                  }
-                >
+                <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
                   {project.projectDesc}
                 </p>
 
@@ -137,10 +104,17 @@ export default function StartupProject() {
 
   return (
     <>
+      {/* Fullscreen Video */}
       {fullscreenVideo && (
         <div
           className="fullscreen-overlay"
-          onClick={() => setFullscreenVideo(null)}
+          onClick={() => {
+            if (videoRef.current) {
+              videoRef.current.pause();
+              videoRef.current.currentTime = 0;
+            }
+            setFullscreenVideo(null);
+          }}
         >
           <video
             className="fullscreen-video"
@@ -148,22 +122,21 @@ export default function StartupProject() {
             controls
             autoPlay
             ref={videoRef}
-            onClick={e => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
           />
           <span className="video-controls-hint">Click outside to close</span>
         </div>
       )}
 
+      {/* Fullscreen Image */}
       {fullscreenImage && (
-        <div
-          className="fullscreen-overlay"
-          onClick={() => setFullscreenImage(null)}
-        >
+        <div className="fullscreen-overlay" onClick={() => setFullscreenImage(null)}>
           <img src={fullscreenImage} alt="Full view" />
           <span className="close-hint">Click anywhere to close</span>
         </div>
       )}
 
+      {/* Project List */}
       {isMobile ? (
         <ProjectContent />
       ) : (
