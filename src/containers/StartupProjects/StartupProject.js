@@ -35,15 +35,47 @@ export default function StartupProject() {
   }, [fullscreenVideo, fullscreenImage]);
 
   // Handle video when fullscreen opens
+  // useEffect(() => {
+  //   if (fullscreenVideo && videoRef.current) {
+  //     // Small delay to ensure DOM is ready
+  //     const timer = setTimeout(() => {
+  //       videoRef.current?.play().catch(err => {
+  //         console.log("Autoplay prevented:", err);
+  //       });
+  //     }, 100);
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [fullscreenVideo]);
+
+  // Replace your video useEffect with this:
   useEffect(() => {
     if (fullscreenVideo && videoRef.current) {
-      // Small delay to ensure DOM is ready
-      const timer = setTimeout(() => {
-        videoRef.current?.play().catch(err => {
+      const video = videoRef.current;
+
+      const handleCanPlay = () => {
+        video.play().catch(err => {
           console.log("Autoplay prevented:", err);
         });
-      }, 100);
-      return () => clearTimeout(timer);
+      };
+
+      const handleWaiting = () => {
+        console.log("Video buffering...");
+        // Optionally show a loading spinner here
+      };
+
+      const handlePlaying = () => {
+        console.log("Video playing");
+      };
+
+      video.addEventListener('canplay', handleCanPlay);
+      video.addEventListener('waiting', handleWaiting);
+      video.addEventListener('playing', handlePlaying);
+
+      return () => {
+        video.removeEventListener('canplay', handleCanPlay);
+        video.removeEventListener('waiting', handleWaiting);
+        video.removeEventListener('playing', handlePlaying);
+      };
     }
   }, [fullscreenVideo]);
 
@@ -164,8 +196,6 @@ export default function StartupProject() {
               className="fullscreen-video"
               src={fullscreenVideo}
               controls
-              muted
-              autoPlay
               playsInline
               webkit-playsinline="true"
               preload="auto"
