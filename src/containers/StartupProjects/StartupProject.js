@@ -12,11 +12,25 @@ export default function StartupProject() {
   const { isDark } = useContext(StyleContext);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+    if (fullscreenVideo && videoRef.current) {
+      const video = videoRef.current;
+
+      const handleCanPlay = async () => {
+        try {
+          await video.play();
+        } catch (err) {
+          console.log("Play failed:", err);
+        }
+      };
+
+      video.addEventListener('canplay', handleCanPlay);
+      video.load(); // Trigger loading
+
+      return () => {
+        video.removeEventListener('canplay', handleCanPlay);
+      };
+    }
+  }, [fullscreenVideo]);
 
   // Handle video when fullscreen opens
   useEffect(() => {
@@ -152,6 +166,10 @@ export default function StartupProject() {
               webkit-playsinline="true"
               preload="auto"
               controlsList="nodownload"
+              onLoadedData={() => {
+                // Ensure play when loaded
+                videoRef.current?.play().catch(e => console.log(e));
+              }}
             />
           </div>
           <button
