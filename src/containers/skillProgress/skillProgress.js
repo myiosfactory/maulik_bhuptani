@@ -6,43 +6,44 @@ import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
-  if (techStack.viewSkillBars) {
-    return (
-      <Fade bottom duration={1000} distance="20px">
-        <div className="skills-container">
-          <div className="skills-bar">
-            <h1 className="skills-heading">Proficiency</h1>
-            {techStack.experience.map((exp, i) => {
-              const progressStyle = {
-                width: exp.progressPercentage,
-                borderRadius:
-                  exp.progressPercentage === "100%" ? "25px" : "25px 0 0 25px"
-              };
+  if (!techStack.viewSkillBars) return null;
 
-              return (
-                <div key={i} className="skill">
-                  <p>{exp.Stack}</p>
-                  <div className="meter">
-                    <span style={progressStyle}></span>
-                  </div>
+  return (
+    <Fade bottom duration={1000} distance="20px">
+      <div className="skills-container">
+        {/* LEFT */}
+        <div className="skills-bar">
+          <h1 className="skills-heading">Proficiency</h1>
+
+          {techStack.experience.map((exp, i) => {
+            const progressStyle = {
+              width: exp.progressPercentage,
+              borderRadius:
+                exp.progressPercentage === "100%"
+                  ? "25px"
+                  : "25px 0 0 25px"
+            };
+
+            return (
+              <div key={i} className="skill">
+                <p>{exp.Stack}</p>
+                <div className="meter">
+                  <span style={progressStyle}></span>
                 </div>
-              );
-            })}
-          </div>
-
-          <div className="skills-image">
-            {illustration.animated ? (
-              <DisplayLottie animationData={Build} style={{ height: 550 }} />
-            ) : (
-              <img
-                alt="Skills"
-                src={require("../../assets/images/skill.svg")}
-              />
-            )}
-          </div>
+              </div>
+            );
+          })}
         </div>
-      </Fade>
-    );
-  }
-  return null;
+
+        {/* RIGHT */}
+        <div className="skills-image">
+          {illustration.animated && (
+            <div className="lottie-wrapper">
+              <DisplayLottie animationData={Build} />
+            </div>
+          )}
+        </div>
+      </div>
+    </Fade>
+  );
 }
