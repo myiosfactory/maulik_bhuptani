@@ -11,7 +11,6 @@ export default function StartupProject() {
   const videoRef = useRef(null);
   const { isDark } = useContext(StyleContext);
 
-  // Check if mobile on load and resize
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
     checkMobile();
@@ -19,12 +18,22 @@ export default function StartupProject() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Open URL in new tab
   function openUrlInNewTab(url) {
     if (!url) return;
     const win = window.open(url, "_blank");
     win && win.focus();
   }
+
+  // Handle overlay close - only close if clicking the overlay itself
+  const handleOverlayClick = (e, closeFunc) => {
+    if (e.target === e.currentTarget) {
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+      }
+      closeFunc();
+    }
+  };
 
   if (!bigProjects.display) return null;
 
@@ -108,29 +117,28 @@ export default function StartupProject() {
       {fullscreenVideo && (
         <div
           className="fullscreen-overlay"
-          onClick={() => {
-            if (videoRef.current) {
-              videoRef.current.pause();
-              videoRef.current.currentTime = 0;
-            }
-            setFullscreenVideo(null);
-          }}
+          onClick={(e) => handleOverlayClick(e, () => setFullscreenVideo(null))}
         >
-          <video
-            className="fullscreen-video"
-            src={fullscreenVideo}
-            controls
-            autoPlay
-            ref={videoRef}
-            onClick={(e) => e.stopPropagation()}
-          />
+          <div className="video-container" onClick={(e) => e.stopPropagation()}>
+            <video
+              className="fullscreen-video"
+              src={fullscreenVideo}
+              controls
+              autoPlay
+              playsInline
+              ref={videoRef}
+            />
+          </div>
           <span className="video-controls-hint">Click outside to close</span>
         </div>
       )}
 
       {/* Fullscreen Image */}
       {fullscreenImage && (
-        <div className="fullscreen-overlay" onClick={() => setFullscreenImage(null)}>
+        <div
+          className="fullscreen-overlay"
+          onClick={(e) => handleOverlayClick(e, () => setFullscreenImage(null))}
+        >
           <img src={fullscreenImage} alt="Full view" />
           <span className="close-hint">Click anywhere to close</span>
         </div>

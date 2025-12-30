@@ -20,6 +20,19 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-video {
+  max-width: 95vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+}
+
 .project-image {
   position: relative;
   width: 100%;
@@ -78,13 +91,6 @@
 
 .video-thumb:hover .play-button {
   transform: scale(1.08);
-}
-
-.fullscreen-video {
-  max-width: 95vw;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
 }
 
 .video-controls-hint {
