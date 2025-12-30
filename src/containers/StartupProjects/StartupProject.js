@@ -48,34 +48,41 @@ export default function StartupProject() {
   // }, [fullscreenVideo]);
 
   // Replace your video useEffect with this:
+  // useEffect(() => {
+  //   if (fullscreenVideo && videoRef.current) {
+  //     const video = videoRef.current;
+
+  //     const handleCanPlay = () => {
+  //       video.play().catch(err => {
+  //         console.log("Autoplay prevented:", err);
+  //       });
+  //     };
+
+  //     const handleWaiting = () => {
+  //       console.log("Video buffering...");
+  //       // Optionally show a loading spinner here
+  //     };
+
+  //     const handlePlaying = () => {
+  //       console.log("Video playing");
+  //     };
+
+  //     video.addEventListener('canplay', handleCanPlay);
+  //     video.addEventListener('waiting', handleWaiting);
+  //     video.addEventListener('playing', handlePlaying);
+
+  //     return () => {
+  //       video.removeEventListener('canplay', handleCanPlay);
+  //       video.removeEventListener('waiting', handleWaiting);
+  //       video.removeEventListener('playing', handlePlaying);
+  //     };
+  //   }
+  // }, [fullscreenVideo]);
+
   useEffect(() => {
     if (fullscreenVideo && videoRef.current) {
-      const video = videoRef.current;
-
-      const handleCanPlay = () => {
-        video.play().catch(err => {
-          console.log("Autoplay prevented:", err);
-        });
-      };
-
-      const handleWaiting = () => {
-        console.log("Video buffering...");
-        // Optionally show a loading spinner here
-      };
-
-      const handlePlaying = () => {
-        console.log("Video playing");
-      };
-
-      video.addEventListener('canplay', handleCanPlay);
-      video.addEventListener('waiting', handleWaiting);
-      video.addEventListener('playing', handlePlaying);
-
-      return () => {
-        video.removeEventListener('canplay', handleCanPlay);
-        video.removeEventListener('waiting', handleWaiting);
-        video.removeEventListener('playing', handlePlaying);
-      };
+      // Reset video state completely
+      videoRef.current.load();
     }
   }, [fullscreenVideo]);
 
@@ -197,9 +204,12 @@ export default function StartupProject() {
               src={fullscreenVideo}
               controls
               playsInline
-              webkit-playsinline="true"
               preload="auto"
-              controlsList="nodownload"
+              onPause={(e) => console.log("Paused - readyState:", e.target.readyState, "paused:", e.target.paused)}
+              onPlay={() => console.log("Playing")}
+              onWaiting={() => console.log("Waiting/Buffering")}
+              onError={(e) => console.log("Error:", e.target.error)}
+              onStalled={() => console.log("Stalled - network issue")}
             />
           </div>
           <button
