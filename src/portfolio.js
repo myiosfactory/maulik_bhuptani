@@ -219,7 +219,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/DragonAI.png"),
+      image: require("./assets/images/work_projects/DragonAI.jpeg"),
       projectName: "DragonAI: AI Image & Video",
       projectDesc:
         "Built an all-in-one AI platform combining chat, image generation, and video creation. Delivers high-quality AI outputs with a unified experience, advanced tools, and a creator-focused ecosystem.",
@@ -245,7 +245,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/FluidFocus.png"),
+      image: require("./assets/images/work_projects/FluidFocus.jpeg"),
       projectName: "Fluid Focus",
       projectDesc:
         "Built a productivity app to help users reduce screen time and stay focused. Includes focus sessions, app blocking, and usage tracking. Encourages healthier digital habits through simple rewards.",
@@ -257,7 +257,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/GolfAI.jpeg"),
+      image: require("./assets/images/work_projects/GolfAI.jpg"),
       projectName: "Golf AI",
       projectDesc:
         "Developed a camera-based golf swing analysis system leveraging AI and motion analysis. Provides instant feedback, customized action plans, and performance tracking—no external sensors required.",
@@ -270,7 +270,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/DamageID.png"),
+      image: require("./assets/images/work_projects/DamageID.jpeg"),
       projectName: "Damage iD",
       projectDesc:
         "Damage iD enables vehicle-sharing businesses to capture before-and-after photo and video proof of vehicle condition and fuel levels. It prevents disputes, protects drivers and agents and boosting trust and profitability.",
@@ -282,7 +282,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/BedTime.png"),
+      image: require("./assets/images/work_projects/BedTime.jpeg"),
       projectName: "DreamTime Stories & Sounds",
       projectDesc:
         "An App for child for peaceful sleep. It helps children fall asleep faster and enjoy a night of restful sleep, DreamTime offers calming sleep stories, adventurous tales, and soothing meditation sounds.",
@@ -294,13 +294,13 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/Agent37.png"),
+      image: require("./assets/images/work_projects/Agent37.jpeg"),
       projectName: "Agent37",
       projectDesc:
         "Agent37 is an all-in-one client management app designed for real estate professionals. It simplifies buyers, sellers, teams, tasks, documents, and transactions through a fast, intuitive mobile experience."
     },
     {
-      image: require("./assets/images/work_projects/Junote.png"),
+      image: require("./assets/images/work_projects/Junote.jpeg"),
       projectName: "Junote Workout Tracker",
       projectDesc:
         "Junote Gym Log combines strength training and running into a single, balanced fitness experience. It offers customizable workouts, flexible plans, and routines for every fitness level. With built-in progress tracking, it helps users stay consistent and achieve their goals efficiently.",
@@ -312,7 +312,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/Lebenskompass.png"),
+      image: require("./assets/images/work_projects/Lebenskompass.jpeg"),
       projectName: "Lebenskompass",
       projectDesc:
         "Lebenskompass Quotes is a daily inspiration app offering motivational quotes, affirmations, and positive thoughts. It helps users stay mindful and focused with reminders, widgets, and personalized content. Designed to fit everyday life, it delivers the right words at the right moment to inspire clarity and positivity.",
