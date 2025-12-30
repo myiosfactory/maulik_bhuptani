@@ -18,6 +18,22 @@ export default function StartupProject() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") {
+        if (fullscreenVideo) {
+          closeVideo();
+        }
+        if (fullscreenImage) {
+          setFullscreenImage(null);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [fullscreenVideo, fullscreenImage]);
+
   // Handle video when fullscreen opens
   useEffect(() => {
     if (fullscreenVideo && videoRef.current) {
