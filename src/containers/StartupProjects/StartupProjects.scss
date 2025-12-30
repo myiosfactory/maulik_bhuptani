@@ -264,3 +264,40 @@
     /* single column on mobile */
   }
 }
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .card-subtitle {
+    font-size: 14px;
+  }
+
+  .project-image {
+    min-height: 150px;
+  }
+
+  .video-thumb {
+    height: 150px;
+  }
+
+  .video-thumb .card-image1 {
+    max-width: 150px;
+    width: 150px;
+  }
+
+  .play-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-button i {
+    font-size: 16px;
+  }
+}

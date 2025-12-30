@@ -9,6 +9,13 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .card-image {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
 .certificate-card:hover .card-image {
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
@@ -22,10 +29,39 @@
   margin: 15px 0 0 0;
 }
 
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.125rem;
+    line-height: 20px;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-title {
+    font-size: 1rem;
+    line-height: 18px;
+  }
+}
+
 .card-subtitle {
   color: $cardSubtitle;
   font-size: 1.063rem;
   line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .card-subtitle {
+    font-size: 0.938rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+  }
 }
 
 .certificate-card {
@@ -37,6 +73,18 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-card {
+    padding: 0.75rem;
+  }
 }
 
 .certificate-detail-div {
@@ -60,10 +108,32 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .certificate-image-div {
+    height: auto;
+    min-height: 200px;
+  }
+}
+
 .achievement-cards-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .achievement-cards-div {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-cards-div {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 10px;
+  }
 }
 
 .certificate-card-footer {
@@ -93,4 +163,22 @@
 
 span.certificate-tag:hover {
   background: $buttonHover;
+}
+
+@media (max-width: 768px) {
+  span.certificate-tag {
+    font-size: 0.875rem;
+    height: 1.8em;
+    margin: 0 0.25rem 0.5rem 0;
+    padding: 0 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  span.certificate-tag {
+    font-size: 0.75rem;
+    height: 1.6em;
+    margin: 0 0.2rem 0.25rem 0;
+    padding: 0 0.4em;
+  }
 }
