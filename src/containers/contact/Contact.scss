@@ -3,7 +3,6 @@
 .contact-div-main {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 60px;
 }
 
@@ -16,15 +15,14 @@
 }
 
 .contact-title {
-  font-size: 65px;
-  font-weight: 400;
-  margin-bottom: 2rem;
+  font-size: 48px;
+  margin-bottom: 1rem;
 }
 
 .contact-detail,
 .contact-detail-email {
   margin-top: 0px;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 400;
   color: $subTitle;
   text-decoration: none;
