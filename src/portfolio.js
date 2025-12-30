@@ -4,6 +4,11 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import udemySupabase from "./assets/images/udemy_supabase.jpg";
+import udemyClaude from "./assets/images/udemy_claude.jpg";
+import udemyFlutter from "./assets/images/udemy_flutter.jpg";
+import udemyiOSMasterClass from "./assets/images/udemy_ios_masterclass.jpg";
+import udemyReactNative from "./assets/images/udemy_reactnative.jpg";
 
 // Splash Screen
 
@@ -341,7 +346,7 @@ const achievementSection = {
       title: "iOS Development Masterclass",
       subtitle:
         "Completed iOS masterclass using SwiftUI, SwiftData, and Apple AI, with a strong focus on clean architecture.",
-      image: require("./assets/images/udemy_ios_masterclass.jpg"),
+      image: udemyiOSMasterClass,
       imageAlt: "PWA Logo",
       footerLink: [
         {
@@ -354,7 +359,7 @@ const achievementSection = {
       title: "Flutter & Dart - The Complete Guide",
       subtitle:
         "Flutter SDK & Flutter Framework for building native iOS and Android apps.",
-      image: require("./assets/images/udemy_flutter.jpg"),
+      image: udemyFlutter,
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
@@ -367,7 +372,7 @@ const achievementSection = {
       title: " The Complete React Native + Hooks Course",
       subtitle:
         "Hands-on experience with React Native core concepts, Hooks, navigation, and performance optimization.",
-      image: require("./assets/images/udemy_reactnative.jpg"),
+      image: udemyReactNative,
       imageAlt: "PWA Logo",
       footerLink: [
         {
@@ -380,7 +385,7 @@ const achievementSection = {
       title: "Backend Development with Supabase",
       subtitle:
         "Mastering Backend Development with Supabase and Swift for Seamless iOS Integration.",
-      image: require("./assets/images/udemy_supabase.jpg"),
+      image: udemySupabase,
       imageAlt: "",
       footerLink: [
         {
@@ -393,7 +398,7 @@ const achievementSection = {
       title: "Master In Claude AI – Top 1 AI Tool",
       subtitle:
         "Mastering Claude AI in Most Benchmarks for Real-World Business, Problem-Solving, and Coding",
-      image: require("./assets/images/udemy_claude.jpg"),
+      image: udemyClaude,
       imageAlt: "PWA Logo",
       footerLink: [
         {
