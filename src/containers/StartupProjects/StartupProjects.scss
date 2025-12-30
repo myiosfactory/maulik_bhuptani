@@ -1,11 +1,14 @@
 @import "../../_globalColor";
 
+.main {
+  overflow-x: hidden;
+}
+
 .card-image {
-  max-width: none;
-  height: 300px;
-  width: auto;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
   object-fit: contain;
-  transform: scale(1.6);
 }
 
 .card-image1 {
@@ -244,24 +247,42 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   .card-image {
-    transform: scale(1);
-    /* reset scale on mobile */
-    height: auto;
-    width: 100%;
-    max-width: 100%;
+    max-width: none;
+    height: 300px;
+    width: auto;
+    transform: scale(1.6);
   }
 
   .project-image {
-    height: auto;
-    min-height: 200px;
-    overflow: visible;
+    height: 350px;
+    overflow: hidden;
   }
+}
 
+@media (max-width: 768px) {
   .projects-container {
     grid-template-columns: 1fr;
-    /* single column on mobile */
+  }
+
+  .project-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .project-image {
+    height: auto !important;
+    min-height: 200px;
+    overflow: visible !important;
+    padding: 20px 0;
+  }
+
+  .card-image {
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
 
@@ -281,6 +302,8 @@
 
   .project-image {
     min-height: 150px;
+    overflow: visible;
+    /* Keep visible here too */
   }
 
   .video-thumb {

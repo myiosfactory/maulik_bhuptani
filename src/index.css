@@ -23,6 +23,7 @@ html,
 body {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  background-color: #f5f2f4;
 }
 
 *,
@@ -38,10 +39,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  /* Ensure macOS bounce shows the site background */
+  background-color: #f5f2f4;
+}
+
+/* Make sure root container also uses same background */
+#root {
+  background-color: #f5f2f4;
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
+
   html,
   body {
     font-size: rem;
