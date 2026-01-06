@@ -282,7 +282,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "App Store",
-          url: "https://apps.apple.com/us/app/golf-ai/id1442971815"
+          url: "https://apps.apple.com/us/app/damage-id/id1024284443"
         }
       ]
     },
