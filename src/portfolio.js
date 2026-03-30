@@ -328,9 +328,31 @@ const bigProjects = {
           url: "https://apps.apple.com/lv/app/reminder-t%C3%A4gliche-spr%C3%BCche/id1531266738"
         }
       ]
+    },
+    {
+      image: require("./assets/images/work_projects/papanca.jpg"),
+      projectName: "Papanca - AI Running Coach",
+      projectDesc: "Papanca is an AI-powered running coach that builds your daily workout around your energy, schedule, and pace. Answer 3 quick questions and get a personalized run for the day — no rigid plans, no data overload. Whether you're training for a 5K, a half-marathon, or just staying consistent, every session adapts to where you actually are today.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/papanca-ai-running-coach/id6757701114"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/work_projects/my_guardian.jpg"),
+      projectName: "My Guardian - SOS",
+      projectDesc: "My Guardian SOS is a personal safety app designed to help you navigate emergencies with confidence. Whether hiking off- grid, traveling, or going about your day, My Guardian SOS provides essential safety tools that work even without cell service. With intelligent battery preservation, offline navigation, instant emergency alerts and Safety Zones(geo - fence alerts) with arrival and departure notifications.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/papanca-ai-running-coach/id6757701114"
+        }
+      ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
