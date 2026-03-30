@@ -330,7 +330,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/papanca.jpg"),
+      image: require("./assets/images/work_projects/papanca.jpeg"),
       projectName: "Papanca - AI Running Coach",
       projectDesc: "Papanca is an AI-powered running coach that builds your daily workout around your energy, schedule, and pace. Answer 3 quick questions and get a personalized run for the day — no rigid plans, no data overload. Whether you're training for a 5K, a half-marathon, or just staying consistent, every session adapts to where you actually are today.",
       footerLink: [
@@ -341,7 +341,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/my_guardian.jpg"),
+      image: require("./assets/images/work_projects/my_guardian.jpeg"),
       projectName: "My Guardian - SOS",
       projectDesc: "My Guardian SOS is a personal safety app designed to help you navigate emergencies with confidence. Whether hiking off- grid, traveling, or going about your day, My Guardian SOS provides essential safety tools that work even without cell service. With intelligent battery preservation, offline navigation, instant emergency alerts and Safety Zones(geo - fence alerts) with arrival and departure notifications.",
       footerLink: [
