@@ -275,7 +275,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/DamageID.jpeg"),
+      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774876261/DamageID_c8acer.jpg",
       projectName: "Damage iD",
       projectDesc:
         "Damage iD enables vehicle-sharing businesses to capture before-and-after photo and video proof of vehicle condition and fuel levels. It prevents disputes, protects drivers and agents and boosting trust and profitability.",
