@@ -212,18 +212,6 @@ const bigProjects = {
   subtitle: "High-impact products crafted for startups and growing companies",
   projects: [
     {
-      image: require("./assets/images/work_projects/LuluMoney.jpeg"),
-      projectName: "Lulu Money - Money Transfer App",
-      projectDesc:
-        "Lulu Money is a global payment app designed for fast, secure, and reliable international money transfers. It allows users to send money worldwide with real-time tracking and transparent exchange rates. Multiple payment options and easy recipient management make transfers simple and flexible.",
-      footerLink: [
-        {
-          name: "App Store",
-          url: "https://apps.apple.com/in/app/lulu-money-money-transfer-app/id1163514668"
-        }
-      ]
-    },
-    {
       image: require("./assets/images/work_projects/DragonAI.jpeg"),
       projectName: "DragonAI: AI Image & Video",
       projectDesc:
@@ -234,18 +222,17 @@ const bigProjects = {
           name: "App Store",
           url: "https://apps.apple.com/us/app/dragonai-ai-image-video/id6737343474"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/work_projects/Notezy.jpeg"),
-      projectName: "Notezy: AI Meeting Note Taker",
+      image: require("./assets/images/work_projects/LuluMoney.jpeg"),
+      projectName: "Lulu Money - Money Transfer App",
       projectDesc:
-        "Developed a meeting assistant leveraging AI for real-time transcription and automated summarization. Features multi-language support, audio ingestion, and notebook-style organization for efficient workflows.",
+        "Lulu Money is a global payment app designed for fast, secure, and reliable international money transfers. It allows users to send money worldwide with real-time tracking and transparent exchange rates. Multiple payment options and easy recipient management make transfers simple and flexible.",
       footerLink: [
         {
           name: "App Store",
-          url: "https://apps.apple.com/us/app/notezy-ai-meeting-note-taker/id6535696830"
+          url: "https://apps.apple.com/in/app/lulu-money-money-transfer-app/id1163514668"
         }
       ]
     },
@@ -262,6 +249,23 @@ const bigProjects = {
       ]
     },
     {
+      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774873676/my_guardian_zgsmcp.jpg",
+      projectName: "My Guardian - SOS",
+      projectDesc: "My Guardian SOS is a personal safety app designed to help you navigate emergencies with confidence. Whether hiking off- grid, traveling, or going about your day, My Guardian SOS provides essential safety tools that work even without cell service. With intelligent battery preservation, offline navigation, instant emergency alerts and Safety Zones(geo - fence alerts) with arrival and departure notifications.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/in/app/my-guardian-sos/id6747328778"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/work_projects/Agent37.jpeg"),
+      projectName: "Agent37",
+      projectDesc:
+        "Agent37 is an all-in-one client management app designed for real estate professionals. It simplifies buyers, sellers, teams, tasks, documents, and transactions through a fast, intuitive mobile experience."
+    },
+    {
       image: require("./assets/images/work_projects/GolfAI.jpg"),
       projectName: "Golf AI",
       projectDesc:
@@ -271,6 +275,18 @@ const bigProjects = {
         {
           name: "App Store",
           url: "https://apps.apple.com/us/app/golf-ai/id1442971815"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/work_projects/Notezy.jpeg"),
+      projectName: "Notezy: AI Meeting Note Taker",
+      projectDesc:
+        "Developed a meeting assistant leveraging AI for real-time transcription and automated summarization. Features multi-language support, audio ingestion, and notebook-style organization for efficient workflows.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/notezy-ai-meeting-note-taker/id6535696830"
         }
       ]
     },
@@ -287,6 +303,28 @@ const bigProjects = {
       ]
     },
     {
+      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774873675/papanca_htp3s7.jpg",
+      projectName: "Papanca - AI Running Coach",
+      projectDesc: "Papanca is an AI-powered running coach that builds your daily workout around your energy, schedule, and pace. Answer 3 quick questions and get a personalized run for the day — no rigid plans, no data overload. Whether you're training for a 5K, a half-marathon, or just staying consistent, every session adapts to where you actually are today.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/papanca-ai-running-coach/id6757701114"
+        }
+      ]
+    },
+    {
+      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774934348/HealthPatners_goptue.jpg",
+      projectName: "Health Partners",
+      projectDesc: "A digital health companion app that makes managing your medical cover simple and intuitive. View and manage your health cover anytim, Claim with a tap using your digital membership card, Submit and track claims in a simpler way",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/au/app/health-partners/id672132923"
+        }
+      ]
+    },
+    {
       image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774874071/BedTime_hptoa0.jpg",
       projectName: "DreamTime Stories & Sounds",
       projectDesc:
@@ -295,24 +333,6 @@ const bigProjects = {
         {
           name: "App Store",
           url: "https://apps.apple.com/us/app/dreamtime-stories-sounds/id6504247314"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/work_projects/Agent37.jpeg"),
-      projectName: "Agent37",
-      projectDesc:
-        "Agent37 is an all-in-one client management app designed for real estate professionals. It simplifies buyers, sellers, teams, tasks, documents, and transactions through a fast, intuitive mobile experience."
-    },
-    {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774874190/Junote_qri06a.jpg",
-      projectName: "Junote Workout Tracker",
-      projectDesc:
-        "Junote Gym Log combines strength training and running into a single, balanced fitness experience. It offers customizable workouts, flexible plans, and routines for every fitness level. With built-in progress tracking, it helps users stay consistent and achieve their goals efficiently.",
-      footerLink: [
-        {
-          name: "App Store",
-          url: "https://apps.apple.com/us/app/junote-workout-tracker/id1620836213"
         }
       ]
     },
@@ -330,24 +350,14 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774873675/papanca_htp3s7.jpg",
-      projectName: "Papanca - AI Running Coach",
-      projectDesc: "Papanca is an AI-powered running coach that builds your daily workout around your energy, schedule, and pace. Answer 3 quick questions and get a personalized run for the day — no rigid plans, no data overload. Whether you're training for a 5K, a half-marathon, or just staying consistent, every session adapts to where you actually are today.",
+      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774874190/Junote_qri06a.jpg",
+      projectName: "Junote Workout Tracker",
+      projectDesc:
+        "Junote Gym Log combines strength training and running into a single, balanced fitness experience. It offers customizable workouts, flexible plans, and routines for every fitness level. With built-in progress tracking, it helps users stay consistent and achieve their goals efficiently.",
       footerLink: [
         {
           name: "App Store",
-          url: "https://apps.apple.com/us/app/papanca-ai-running-coach/id6757701114"
-        }
-      ]
-    },
-    {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774873676/my_guardian_zgsmcp.jpg",
-      projectName: "My Guardian - SOS",
-      projectDesc: "My Guardian SOS is a personal safety app designed to help you navigate emergencies with confidence. Whether hiking off- grid, traveling, or going about your day, My Guardian SOS provides essential safety tools that work even without cell service. With intelligent battery preservation, offline navigation, instant emergency alerts and Safety Zones(geo - fence alerts) with arrival and departure notifications.",
-      footerLink: [
-        {
-          name: "App Store",
-          url: "https://apps.apple.com/us/app/papanca-ai-running-coach/id6757701114"
+          url: "https://apps.apple.com/us/app/junote-workout-tracker/id1620836213"
         }
       ]
     }
