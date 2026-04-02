@@ -349,18 +349,7 @@ const bigProjects = {
         }
       ]
     },
-    {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774874190/Junote_qri06a.jpg",
-      projectName: "Junote Workout Tracker",
-      projectDesc:
-        "Junote Gym Log combines strength training and running into a single, balanced fitness experience. It offers customizable workouts, flexible plans, and routines for every fitness level. With built-in progress tracking, it helps users stay consistent and achieve their goals efficiently.",
-      footerLink: [
-        {
-          name: "App Store",
-          url: "https://apps.apple.com/us/app/junote-workout-tracker/id1620836213"
-        }
-      ]
-    },
+
   ],
   display: true
 };
