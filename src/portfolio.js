@@ -249,7 +249,7 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774873676/my_guardian_zgsmcp.jpg",
+      image: require("./assets/images/work_projects/FluidFocus.jpeg"),
       projectName: "My Guardian - SOS",
       projectDesc: "My Guardian SOS is a personal safety app designed to help you navigate emergencies with confidence. Whether hiking off- grid, traveling, or going about your day, My Guardian SOS provides essential safety tools that work even without cell service. With intelligent battery preservation, offline navigation, instant emergency alerts and Safety Zones(geo - fence alerts) with arrival and departure notifications.",
       footerLink: [
@@ -291,7 +291,7 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774876261/DamageID_c8acer.jpg",
+      image: require("./assets/images/work_projects/FluidFocus.jpeg"),
       projectName: "Damage iD",
       projectDesc:
         "Damage iD enables vehicle-sharing businesses to capture before-and-after photo and video proof of vehicle condition and fuel levels. It prevents disputes, protects drivers and agents and boosting trust and profitability.",
@@ -303,7 +303,7 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774873675/papanca_htp3s7.jpg",
+      image: require("./assets/images/work_projects/FluidFocus.jpeg"),
       projectName: "Papanca - AI Running Coach",
       projectDesc: "Papanca is an AI-powered running coach that builds your daily workout around your energy, schedule, and pace. Answer 3 quick questions and get a personalized run for the day — no rigid plans, no data overload. Whether you're training for a 5K, a half-marathon, or just staying consistent, every session adapts to where you actually are today.",
       footerLink: [
@@ -314,7 +314,7 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774934348/HealthPatners_goptue.jpg",
+      image: require("./assets/images/work_projects/FluidFocus.jpeg"),
       projectName: "Health Partners",
       projectDesc: "A digital health companion app that makes managing your medical cover simple and intuitive. View and manage your health cover anytim, Claim with a tap using your digital membership card, Submit and track claims in a simpler way",
       footerLink: [
@@ -325,7 +325,7 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774874071/BedTime_hptoa0.jpg",
+      image: require("./assets/images/work_projects/FluidFocus.jpeg"),
       projectName: "DreamTime Stories & Sounds",
       projectDesc:
         "An App for child for peaceful sleep. It helps children fall asleep faster and enjoy a night of restful sleep, DreamTime offers calming sleep stories, adventurous tales, and soothing meditation sounds.",
@@ -349,7 +349,18 @@ const bigProjects = {
         }
       ]
     },
-
+    {
+      image: require("./assets/images/work_projects/FluidFocus.jpeg"),
+      projectName: "Junote Workout Tracker",
+      projectDesc:
+        "Junote Gym Log combines strength training and running into a single, balanced fitness experience. It offers customizable workouts, flexible plans, and routines for every fitness level. With built-in progress tracking, it helps users stay consistent and achieve their goals efficiently.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/junote-workout-tracker/id1620836213"
+        }
+      ]
+    },
   ],
   display: true
 };
