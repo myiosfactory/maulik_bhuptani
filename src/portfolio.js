@@ -360,7 +360,7 @@ const bigProjects = {
           url: "https://apps.apple.com/us/app/junote-workout-tracker/id1620836213"
         }
       ]
-    }
+    },
   ],
   display: true
 };
