@@ -231,13 +231,9 @@ export default function StartupProject() {
       )}
 
       {/* Project List */}
-      {isMobile ? (
+      <Fade bottom duration={1000} distance="20px" force={true} appear={true}>
         <ProjectContent />
-      ) : (
-        <Fade bottom duration={1000} distance="20px">
-          <ProjectContent />
-        </Fade>
-      )}
+      </Fade>
     </>
   );
 }
