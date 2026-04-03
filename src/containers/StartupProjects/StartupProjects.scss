@@ -369,4 +369,27 @@
   .fullscreen-video {
     max-height: 60vh;
   }
+
+  /* Dark mode overrides */
+  .project-card.dark-mode {
+    background-color: #1a1e2e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .dark-mode.card-title {
+    color: #ffffff;
+  }
+
+  .dark-mode.card-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .dark-mode.project-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .dark-mode.project-tag {
+    background: $buttonColor;
+    color: #fff;
+  }
 }
