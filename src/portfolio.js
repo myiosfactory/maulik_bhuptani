@@ -361,6 +361,18 @@ const bigProjects = {
         }
       ]
     },
+    {
+      image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1776062723/MoneyPatrol_xtf7hv.png",
+      projectName: "MoneyPatrol : Personal Finance",
+      projectDesc:
+        "Built a personal finance management app that helps users track expenses, set budgets, and reach financial goals. Includes bill reminders, spending insights with detailed reports, and bank-level data encryption.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/moneypatrol-personal-finance/id6450947872"
+        }
+      ]
+    },
   ],
   display: true
 };
