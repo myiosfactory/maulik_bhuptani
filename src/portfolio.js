@@ -385,6 +385,18 @@ const bigProjects = {
         }
       ]
     },
+    {
+      image: require("./assets/images/work_projects/Astro11.png"),
+      projectName: "Astro11 - AI Astrology Companion",
+      projectDesc:
+        "Astro11 is an AI-powered astrology companion built around daily personalized readings, evening journaling, and mood tracking. Pick an AI guide with its own energy, and a reading tone that fits you — mystical, direct, warm, or blunt. Reflect each night with AI-generated prompts, log your mood, and let the Insights tab surface the patterns and people shaping your story. Onboarding tailors every reading and prompt to what matters most to you, with streaks and reminders to keep the ritual going.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/astro11/id6800214353"
+        }
+      ]
+    },
   ],
   display: true
 };
