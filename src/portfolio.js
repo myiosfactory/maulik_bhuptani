@@ -317,7 +317,7 @@ const bigProjects = {
     {
       image: "https://res.cloudinary.com/dpsecouq6/image/upload/v1774873675/papanca_htp3s7.jpg",
       projectName: "Papanca - AI Running Coach",
-      projectDesc: "Papanca is an AI-powered running coach that builds your daily workout around your energy, schedule, and pace. Answer 3 quick questions and get a personalized run for the day — no rigid plans, no data overload. Whether you're training for a 5K, a half-marathon, or just staying consistent, every session adapts to where you actually are today.",
+      projectDesc: "Papanca is an AI-powered running coach that builds your daily workout around your energy, schedule, and pace. Answer 3 quick questions and get a personalized run for the day - no rigid plans, no data overload. Whether you're training for a 5K, a half-marathon, or just staying consistent, every session adapts to where you actually are today.",
       footerLink: [
         {
           name: "App Store",
@@ -389,11 +389,23 @@ const bigProjects = {
       image: require("./assets/images/work_projects/Astro11.png"),
       projectName: "Astro11 - AI Astrology Companion",
       projectDesc:
-        "Astro11 is an AI-powered astrology companion built around daily personalized readings, evening journaling, and mood tracking. Pick an AI guide with its own energy, and a reading tone that fits you — mystical, direct, warm, or blunt. Reflect each night with AI-generated prompts, log your mood, and let the Insights tab surface the patterns and people shaping your story. Onboarding tailors every reading and prompt to what matters most to you, with streaks and reminders to keep the ritual going.",
+        "Astro11 is an AI-powered astrology companion built around daily personalized readings, evening journaling, and mood tracking. Pick an AI guide with its own energy, and a reading tone that fits you - mystical, direct, warm, or blunt. Reflect each night with AI-generated prompts, log your mood, and let the Insights tab surface the patterns and people shaping your story. Onboarding tailors every reading and prompt to what matters most to you, with streaks and reminders to keep the ritual going.",
       footerLink: [
         {
           name: "App Store",
           url: "https://apps.apple.com/us/app/astro11/id6800214353"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/work_projects/ReflexDojo.png"),
+      projectName: "ReflexDojo",
+      projectDesc:
+        "ReflexDojo is a reaction-time trainer disguised as an arcade game - tap shrinking targets before they vanish, with every tap measured in milliseconds. Play Quick Play for a 30-second reflex check, Training Mode to dial in shrink speed, or the Daily Challenge, a themed test generated from the date so every player worldwide gets the same run. Climb eight belt ranks from White to Master based on your average reaction time, and compete across five Game Center leaderboards with 21 achievements to unlock.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/reflexdojo/id6795041241"
         }
       ]
     },
