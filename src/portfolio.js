@@ -260,10 +260,22 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/work_projects/Agent37.jpeg"),
+      image: require("./assets/images/work_projects/agent37.png"),
       projectName: "Agent37",
       projectDesc:
-        "Agent37 is an all-in-one client management app designed for real estate professionals. It simplifies buyers, sellers, teams, tasks, documents, and transactions through a fast, intuitive mobile experience."
+        "Agent37 is built around how real estate agents actually work. It keeps every buyer, seller, and vendor in one place, shareable with your team in real time. Track buyer search criteria, notes, and closing details with reminders. Give each listing a dedicated seller workspace for photos, inspection reports, and vendor event tracking. Invite team members with view or edit access, with updates syncing instantly for everyone. See all vendor events across listings in one calendar, and call, text, or email vendors directly from the app. Compare closed deals year-on-year by price, days on market, and price per square foot."
+    },
+    {
+      image: require("./assets/images/work_projects/avimaps.png"),
+      projectName: "AviMaps",
+      projectDesc:
+        "AviMaps is the ultimate companion for outdoor enthusiasts, hunters, and wildlife observers, whether you're logging a rare bird sighting, tracking a morning hunt, or sharing a cool find with friends. Log every sighting with precise GPS coordinates, species details, date, time, and environmental conditions to build a personal archive of every encounter in the field. Explore an interactive map packed with sightings from the AviMaps community, and get instant automatic species identification with a single tap.",
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/avimaps/id6759719027"
+        }
+      ]
     },
     {
       image: require("./assets/images/work_projects/GolfAI.jpg"),
